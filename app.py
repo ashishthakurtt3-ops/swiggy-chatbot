@@ -36,7 +36,7 @@ def prepare_vector_db(file_path):
 def get_answer(vectorstore, question):
     llm = ChatGroq(
         groq_api_key=GROQ_API_KEY,
-        model_name="llama3-8b-8192",
+        model_name="llama-3.1-8b-instant",
         temperature=0,
         max_tokens=512
     )
